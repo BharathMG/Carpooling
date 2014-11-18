@@ -59,8 +59,8 @@ import android.widget.Button;
 public class AWS extends Activity {
 
 	private AmazonS3Client s3Client = new AmazonS3Client(
-			new BasicAWSCredentials("AKIAJ3LU7YZBC4SPO5YQ",
-					"V5sSJwuqpzV30Wo/Tk9d+HYFuJSNhyahgwXnRDtz"));
+			new BasicAWSCredentials("",
+					""));
 
 	private Button selectPhoto = null;
 	private Button showInBrowser = null;
