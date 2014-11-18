@@ -79,7 +79,7 @@ public class AWS extends Activity {
 		//s3Client.setRegion(Region.getRegion(Regions.US_WEST_2));
 		
 		setContentView(R.layout.activity_aws);
-		Parse.initialize(this, "14na9mFYIWfa5jI8lBetFNtvYx0V8ZZiP9wZS3p4", "WXU6n8Ny9ThvmAtscJ14gf5VgJZuT7MM9WkDaC09");
+		Parse.initialize(this, "", "");
 		Random rand = new Random();
 		myRandom = rand.nextInt();
 		notes = getIntent().getStringExtra("notes");
