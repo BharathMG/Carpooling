@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bharathmg.carpooling"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="com.bharathmg.carpooling.Home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.DrivingDetails"
+            android:label="@string/title_activity_driving_details" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.Login"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.Driveoptions"
+            android:label="@string/title_activity_driveoptions" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.PostRideone"
+            android:label="@string/title_activity_post_rideone" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.PostRidetwo"
+            android:label="@string/title_activity_post_ridetwo" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.OtherDriving"
+            android:label="@string/title_activity_other_driving" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.PassengerOne"
+            android:label="@string/title_activity_passenger_one" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.PassengerTwo"
+            android:label="@string/title_activity_passenger_two" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.Contact"
+            android:label="@string/title_activity_contact" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.DriveHome"
+            android:label="@string/title_activity_drive_home" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.Joinuser"
+            android:label="@string/title_activity_joinuser" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.Track"
+            android:label="@string/title_activity_track" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.TrackDetails"
+            android:label="@string/title_activity_track_details" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.TrackUsers"
+            android:label="@string/title_activity_track_users" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDPpYcbB-LkJy2N7M6dyf5ZPIW0qMdiqQ4" />
+
+        <activity
+            android:name="com.bharathmg.carpooling.Maps"
+            android:label="@string/title_activity_maps" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.Chat"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.DriverChat"
+            android:label="@string/title_activity_driver_chat" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.About"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.Terms"
+            android:label="@string/title_activity_terms" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.AWS"
+            android:label="@string/title_activity_aws" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.Passoptions"
+            android:label="@string/title_activity_passoptions" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.AWSList"
+            android:label="@string/title_activity_awslist" >
+        </activity>
+        <activity
+            android:name="com.bharathmg.carpooling.NotedAWS"
+            android:label="@string/title_activity_noted_aws" >
+        </activity>
+    </application>
+
+</manifest>
