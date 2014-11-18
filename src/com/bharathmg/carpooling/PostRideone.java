@@ -134,34 +134,7 @@ public class PostRideone extends Activity {
 		getMenuInflater().inflate(R.menu.post_rideone, menu);
 		return true;
 	}
-	public void map(View v){
-		/*map = (MapView) findViewById(R.id.mapview);
-        map.setTileSource(TileSourceFactory.MAPNIK);
-        GeoPoint startPoint= handleSearchLocationButton(from);
-       // GeoPoint startPoint = new GeoPoint(48.13, -1.63);
-        MapController mapController = map.getController();
-        mapController.setCenter(startPoint);
-        mapController.setZoom(9);
-        RoadManager roadManager = new OSRMRoadManager();
-        ArrayList<GeoPoint> waypoints = new ArrayList<GeoPoint>();
-        waypoints.add(startPoint);
-        GeoPoint end = handleSearchLocationButton(to);
-        waypoints.add(end); //end point
-        Road road = roadManager.getRoad(waypoints);
-        PathOverlay roadOverlay = RoadManager.buildRoadOverlay(road, map.getContext());
-        map.getOverlays().add(roadOverlay);
-        map.invalidate();*/
-		pro.setVisibility(ProgressBar.VISIBLE);
-		
-		fromText = (EditText) findViewById(R.id.editText1);
-		toText = (EditText) findViewById(R.id.editText2);
-		Intent i=new Intent(this,MainActivity.class);
-		i.putExtra("from", fromText.getText().toString());
-		i.putExtra("to", toText.getText().toString());
-		startActivity(i);
-		pro.setVisibility(ProgressBar.INVISIBLE);
-		//pro.dismiss();
-	}
+	
 	public boolean getLatitudeAndLongitudeFromGoogleMapForAddress(String searchedAddress){
 
 	    Geocoder coder = new Geocoder(getApplicationContext(),Locale.getDefault());

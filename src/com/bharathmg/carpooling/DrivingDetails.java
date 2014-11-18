@@ -90,7 +90,7 @@ public class DrivingDetails extends Activity {
 			  pro.setVisibility(ProgressBar.INVISIBLE);
 		    if (e == null) {
 		      // Hooray! Let them use the app now.
-		    	CharSequence text = "Welcome to ADCarPooling. You have successfully signed up!";
+		    	CharSequence text = "Welcome to CarPooling. You have successfully signed up!";
 		    	
 		    	Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
 		    	Intent i=new Intent(getApplicationContext(),Driveoptions.class);

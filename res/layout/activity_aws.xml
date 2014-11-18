@@ -5,47 +5,46 @@
     android:background="@android:color/holo_blue_light"
     android:orientation="vertical" >
 
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:layout_marginTop="20dip"
-    android:text="@string/step1"
-    />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="@string/step1"
+        android:textColor="#fff" />
 
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/sync_requests_note"
-    android:textSize="10dip"
-    />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sync_requests_note"
+        android:textSize="10dip" />
 
-<Button
-    android:id="@+id/select_photo_button"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:background="#96f2ef"
-    android:padding="10dp"
-    android:text="@string/select_photo"
-    android:textColor="#000"
-    android:visibility="visible" />
+    <Button
+        android:id="@+id/select_photo_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#96f2ef"
+        android:padding="10dp"
+        android:text="@string/select_photo"
+        android:textColor="#000"
+        android:visibility="visible" />
 
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:layout_marginTop="30dip"
-    android:text="@string/step2"
-    />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:text="@string/step2"
+        android:textColor="#fff" />
 
-<Button
-    android:id="@+id/show_in_browser_button"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
-    android:background="#96f2ef"
-    android:padding="10dp"
-    android:text="Show all images"
-    android:textColor="#000"
-    android:visibility="visible"
-    android:onClick="showall" />
+    <Button
+        android:id="@+id/show_in_browser_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#96f2ef"
+        android:onClick="showall"
+        android:padding="10dp"
+        android:text="Show all images"
+        android:textColor="#000"
+        android:visibility="visible" />
 
 </LinearLayout>

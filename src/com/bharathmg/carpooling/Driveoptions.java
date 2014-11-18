@@ -51,5 +51,12 @@ public class Driveoptions extends Activity {
 		i.putExtra("user", currentUser.getUsername());
 		startActivity(i);
 	}
+	
+	@Override
+	public void onBackPressed() {
+		Intent i = new Intent(this, Home.class);
+		startActivity(i);
+	}
+	
 
 }

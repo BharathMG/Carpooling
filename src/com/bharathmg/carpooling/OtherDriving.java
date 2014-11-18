@@ -88,6 +88,7 @@ public class OtherDriving extends Activity {
 				     Log.d("Posted", "posted"); 
 					 Toast.makeText(getApplicationContext(), "Posted successfully!", Toast.LENGTH_LONG).show();
 					 Intent i=new Intent(getApplicationContext(),Driveoptions.class);
+					 i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
 					 startActivity(i);
 				    } else {
 				      // something went wrong

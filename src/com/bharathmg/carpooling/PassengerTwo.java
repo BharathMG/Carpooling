@@ -132,12 +132,6 @@ public class PassengerTwo extends Activity {
 			Log.d("Pass","pass");
 		}
 	}
-	public void mapshow(View v){
-		Intent i=new Intent(this,MainActivity.class);
-		i.putExtra("from", from);
-		i.putExtra("to", to);
-		startActivity(i);
-	}
 	public void contact(View v){
 		Intent i=new Intent(this,Contact.class);
 		i.putExtra("owner", username_owner); 
