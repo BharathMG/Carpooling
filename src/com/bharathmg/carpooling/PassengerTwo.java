@@ -75,9 +75,8 @@ public class PassengerTwo extends Activity {
 		int rem = (tempend % 60);
 		total+= tempend / 60;
 		Log.d("TIME", total+"");
-		journeytime.setText("Journey time :" +total + "hrs "+ rem +"mins");
 		details.setText("Depart Date-"+depart+" Return Date-"+returns);
-		journeymins.setText("Depart Time: "+departtime+" Return Time: "+returntime);
+		journeymins.setText("Depart Time: "+departtime+"\n Return Time: "+returntime);
 		notesview.setText("Notes : "+notes);
 		costview.setText("Cost : "+cost);
 		seatsview.setText("Seats available : "+seats+"");

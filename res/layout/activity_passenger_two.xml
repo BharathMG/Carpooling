@@ -58,12 +58,13 @@
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_below="@+id/textView1"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button4"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="35dp"
             android:background="#fff"
             android:onClick="joinuser"
+            android:padding="5dp"
             android:text="Join"
             android:textColor="#000" />
 
