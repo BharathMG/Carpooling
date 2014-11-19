@@ -26,10 +26,11 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/editText1"
         android:layout_marginTop="10dp"
-        android:background="#fff"
         android:ems="10"
         android:hint="Age"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
 
     <EditText
         android:id="@+id/EditText02"
@@ -38,10 +39,11 @@
         android:layout_alignLeft="@+id/EditText01"
         android:layout_below="@+id/EditText01"
         android:layout_marginTop="10dp"
-        android:background="#fff"
         android:ems="10"
         android:hint="Contact Number"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
 
     <EditText
         android:id="@+id/EditText03"
@@ -50,10 +52,11 @@
         android:layout_alignLeft="@+id/EditText02"
         android:layout_below="@+id/EditText02"
         android:layout_marginTop="10dp"
-        android:background="#fff"
         android:ems="10"
         android:hint="e-mail"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
 
     <EditText
         android:id="@+id/EditText04"
@@ -62,10 +65,11 @@
         android:layout_alignLeft="@+id/EditText03"
         android:layout_below="@+id/EditText03"
         android:layout_marginTop="10dp"
-        android:background="#fff"
         android:ems="10"
         android:hint="Car Model"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
 
     <EditText
         android:id="@+id/EditText05"
@@ -74,10 +78,11 @@
         android:layout_alignLeft="@+id/EditText04"
         android:layout_below="@+id/EditText04"
         android:layout_marginTop="10dp"
-        android:background="#fff"
         android:ems="10"
         android:hint="Notes"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
 
     <EditText
         android:id="@+id/editText1"
@@ -86,10 +91,11 @@
         android:layout_alignLeft="@+id/EditText01"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="20dp"
-        android:background="#fff"
         android:ems="10"
         android:hint="Name"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
 
     <ProgressBar
         android:id="@+id/progressBar1"
@@ -108,7 +114,7 @@
         android:layout_alignLeft="@+id/EditText05"
         android:layout_below="@+id/EditText05"
         android:layout_marginTop="62dp"
-        android:background="#96f2ef"
+        android:background="#fff"
         android:onClick="join"
         android:padding="10dp"
         android:paddingBottom="5dp"

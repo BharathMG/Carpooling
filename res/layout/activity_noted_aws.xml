@@ -17,7 +17,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
         android:ems="10"
-        android:hint="Your notes"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:hint="Your bio or one-liner about your ride!"
         android:inputType="textMultiLine" >
 
         <requestFocus />
@@ -30,7 +32,7 @@
         android:layout_below="@+id/editText1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
-        android:background="#96f2ef"
+        android:background="#fff"
         android:onClick="next"
         android:padding="10dp"
         android:text="Next"

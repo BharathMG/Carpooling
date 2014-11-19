@@ -46,9 +46,6 @@ public class Login extends Activity {
 	private EditText mEmailView;
 	ProgressBar pro;
 	private EditText mPasswordView;
-	private View mLoginFormView;
-	private View mLoginStatusView;
-	private TextView mLoginStatusMessageView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -85,7 +82,6 @@ public class Login extends Activity {
 					}
 				});
 
-		mLoginFormView = findViewById(R.id.login_form);
 		//mLoginStatusView = findViewById(R.id.login_status);
 		//mLoginStatusMessageView = (TextView) findViewById(R.id.login_status_message);
 

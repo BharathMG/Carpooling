@@ -19,8 +19,8 @@
         android:ems="10"
         android:hint="Fetching owner&apos;s name.."
         android:inputType="textPersonName"
-        android:textColor="#000"
-        android:textColorHint="#000" />
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
 
     <EditText
         android:id="@+id/editText2"
@@ -30,6 +30,7 @@
         android:layout_below="@+id/editText1"
         android:layout_marginTop="18dp"
         android:ems="10"
+        android:textColorHint="#fff"
         android:hint="Fetching owner&apos;s email id.."
         android:inputType="textEmailAddress" />
 
@@ -41,6 +42,7 @@
         android:layout_below="@+id/editText2"
         android:layout_marginTop="29dp"
         android:ems="10"
+        android:textColorHint="#fff"
         android:hint="subject" >
 
         <requestFocus />
@@ -54,6 +56,7 @@
         android:layout_below="@+id/editText3"
         android:layout_marginTop="39dp"
         android:ems="10"
+        android:textColorHint="#fff"
         android:hint="body"
         android:inputType="textMultiLine" />
 
@@ -65,7 +68,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="64dp"
         android:layout_marginLeft="18dp"
-        android:background="#96f2ef"
+        android:background="#fff"
         android:padding="10dp"
         android:text="Send"
         android:textColor="#000" 
@@ -79,7 +82,7 @@
         android:layout_alignBottom="@+id/button1"
         android:layout_alignParentRight="true"
         android:layout_marginRight="32dp"
-        android:background="#96f2ef"
+        android:background="#fff"
         android:padding="10dp"
         android:text="Cancel"
         android:textColor="#000" 

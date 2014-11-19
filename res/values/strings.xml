@@ -39,7 +39,7 @@
     <string name="title_activity_about">About</string>
     <string name="title_activity_terms">Terms</string>
     <string name="title_activity_aws">AWS</string>
-    <string name="step1">You can upload an image file to the Amazon S3 Storage</string>
+    <string name="step1">Please upload an image of you!</string>
     <string name="show_in_browser">Show in Browser</string>
     <string name="select_photo">Select Photo</string>
     <string name="step2">You can see all your images that you have uploaded.</string>

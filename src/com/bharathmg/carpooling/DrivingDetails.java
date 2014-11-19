@@ -75,16 +75,7 @@ public class DrivingDetails extends Activity {
 		user.put("age", mEditAge.getText().toString());
 		user.put("car", mEditCar.getText().toString());
 		user.put("notes", mNotes.getText().toString());
-		/*try {
-			//Jsoup.connect("http://carpooling.com.s3-website-us-west-2.amazonaws.com/index.html?user="+mEditFirstName.getText().toString()+"&pass="+mEditPassword.getText().toString()).post();
-			//Document doc = Jsoup.connect("http://carpooling.com.s3-website-us-west-2.amazonaws.com/index.html?user="+mEditFirstName.getText().toString()+"&pass="+mEditPassword.getText().toString()).userAgent("Mozilla").get();
-			//downloadUrl("http://carpooling.com.s3-website-us-west-2.amazonaws.com/index.html?user="+mEditFirstName.getText().toString()+"&pass="+mEditPassword.getText().toString());
-		} catch (IOException e2) {
-			// TODO Auto-generated catch block
-			e2.printStackTrace();
-			Log.d("Wrong", e2.getMessage());
-			
-		}*/ 
+	
 		user.signUpInBackground(new SignUpCallback() {
 		  public void done(ParseException e) {
 			  pro.setVisibility(ProgressBar.INVISIBLE);

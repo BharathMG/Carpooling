@@ -43,7 +43,7 @@ public class Home extends Activity {
 		if (current_user != null) {
 			logout.setVisibility(Button.VISIBLE);
 			userName.setVisibility(View.VISIBLE);
-			userName.setText("Hi! " + current_user.getUsername());
+			userName.setText("Hi " + current_user.getUsername() + "! ");
 
 		}
 	}

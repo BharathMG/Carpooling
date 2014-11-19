@@ -13,7 +13,7 @@ import android.widget.TimePicker;
 
 public class PostRidetwo extends Activity {
 	//EditText departText,returnText,departtime,returntime;
-	DatePicker departdate,returndate;
+	EditText departdate,returndate;
 	String departtext,returntext,departtimetext,returntimetext;
 	TimePicker departtime, returntime;
 	@Override
@@ -29,16 +29,16 @@ public class PostRidetwo extends Activity {
 		return true;
 	}
 	public void next(View v){
-		departdate = ((DatePicker)findViewById(R.id.datePicker1));
-		returndate = (DatePicker) findViewById(R.id.datePicker2);
-		departtime = (TimePicker) findViewById(R.id.timePicker1);
-		returntime = (TimePicker) findViewById(R.id.timePicker2);
+		departdate = ((EditText)findViewById(R.id.depart_date));
+		returndate = (EditText) findViewById(R.id.return_date);
+		departtime = (TimePicker) findViewById(R.id.depart_time);
+		returntime = (TimePicker) findViewById(R.id.return_time);
 		Intent i=new Intent(this,OtherDriving.class);
 		String from= getIntent().getStringExtra("from");
 		String to= getIntent().getStringExtra("to");
 		String meeting = getIntent().getStringExtra("meeting");
-		departtext = departdate.getDayOfMonth() +"/" + departdate.getMonth() + "/"+ departdate.getYear();
-		returntext = returndate.getDayOfMonth() + "/" + returndate.getMonth() + "/" + returndate.getYear();
+		departtext = departdate.getText().toString();
+		returntext = returndate.getText().toString();
 		departtimetext = departtime.getCurrentHour() + ":" + departtime.getCurrentMinute();
 		returntimetext = returntime.getCurrentHour() + ":" + returntime.getCurrentMinute();
 		

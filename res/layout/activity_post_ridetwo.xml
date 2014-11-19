@@ -1,142 +1,74 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-     tools:context=".PostRidetwo" 
-     android:background="@android:color/holo_blue_light">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
 
-<RelativeLayout
-    android:layout_width="335dp"
-    android:layout_height="900dp"
-    
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin" >
-
-    <!-- <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"
-        android:ems="10"
-        android:hint="Depart"
-        android:inputType="date" />
+        android:background="@android:color/holo_blue_light"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
-        android:ems="10"
-        android:hint="Return"
-        android:inputType="date" />
+        <EditText
+            android:id="@+id/depart_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Depart Date"
+            android:inputType="date"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
 
-    <EditText
-        android:id="@+id/EditText01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/editText2"
-        android:ems="10"
-        android:hint="Depart Time"
-        android:inputType="date" />
+        <EditText
+            android:id="@+id/return_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Return Date"
+            android:inputType="date"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
 
-    <EditText
-        android:id="@+id/EditText02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/EditText01"
-        android:layout_below="@+id/EditText01"
-        android:ems="10"
-        android:hint="Return time"
-        android:inputType="date" /> -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Depart Time"
+            android:textColor="#fff"
+            android:textSize="15dp" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="18dp"
-        android:text="Depart Date"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TimePicker
+            android:id="@+id/depart_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/datePicker1"
-        android:layout_below="@+id/datePicker1"
-        android:layout_marginTop="39dp"
-        android:text="Return Date"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return Time"
+            android:textColor="#fff"
+            android:textSize="15dp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_marginBottom="-420dp"
-        android:text="Depart Time"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TimePicker
+            android:id="@+id/return_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
 
-    <TimePicker
-        android:id="@+id/timePicker1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_marginTop="36dp" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:onClick="next"
+            android:padding="15dp"
+            android:text="Next"
+            android:textColor="#000" />
+    </LinearLayout>
 
-    <DatePicker
-        android:id="@+id/datePicker1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1" />
-
-    <DatePicker
-        android:id="@+id/datePicker2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="17dp"
-        android:background="#96f2ef"
-        android:onClick="next"
-        android:padding="5dp"
-        android:text="Next"
-        android:textColor="#000" />
-
-    <TimePicker
-        android:id="@+id/timePicker2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/timePicker1"
-        android:layout_below="@+id/timePicker1"
-        android:layout_marginTop="89dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_below="@+id/timePicker1"
-        android:layout_marginTop="52dp"
-        android:text="Return Time"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-</RelativeLayout>
-   </ScrollView>
+</ScrollView>
